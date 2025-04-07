@@ -1,0 +1,172 @@
+/* 
+  Components.css 
+  This file contains reusable component styles that 
+  work in conjunction with Tailwind utility classes
+*/
+
+@tailwind components;
+
+@layer components {
+  /* Buttons */
+  .btn-primary {
+    @apply bg-black text-white font-medium rounded-md py-2.5 px-5 flex items-center justify-center shadow-button hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transition-all duration-200;
+  }
+
+  .btn-outline {
+    @apply bg-black text-white font-medium rounded-md py-2.5 px-5 flex items-center justify-center shadow-button hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transition-all duration-200;
+  }
+
+  .btn-secondary {
+    @apply bg-black text-white font-medium rounded-md py-2.5 px-5 flex items-center justify-center shadow-button hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transition-all duration-200;
+  }
+
+  .btn-accent {
+    @apply bg-black text-white font-medium rounded-md py-2.5 px-5 flex items-center justify-center shadow-button hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transition-all duration-200;
+  }
+
+  .btn-danger {
+    @apply bg-black text-white font-medium rounded-md py-2.5 px-5 flex items-center justify-center shadow-button hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-error transition-all duration-200;
+  }
+
+  /* Badges */
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+
+  .badge-primary {
+    @apply bg-black text-white;
+  }
+
+  .badge-accent {
+    @apply bg-black text-white;
+  }
+
+  .badge-success {
+    @apply bg-black text-white;
+  }
+
+  .badge-warning {
+    @apply bg-black text-white;
+  }
+
+  .badge-error {
+    @apply bg-black text-white;
+  }
+
+  /* Skill Tag */
+  .skill-tag {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-black text-white transition-colors hover:bg-gray-800;
+  }
+
+  /* Achievement Tag */
+  .achievement-tag {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-black/5 text-text transition-colors hover:bg-black/10;
+  }
+
+  /* Cards */
+  .card {
+    @apply rounded-lg shadow-card bg-card border border-border/30 p-6 transition-shadow duration-200 hover:shadow-elevated;
+  }
+
+  /* Form Controls */
+  .form-control {
+    @apply block w-full px-3 py-2.5 border border-border rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary transition-colors;
+  }
+
+  .form-select {
+    @apply block w-full px-3 py-2.5 border border-border rounded-md shadow-sm bg-white focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary transition-colors;
+  }
+
+  .form-checkbox {
+    @apply h-4 w-4 text-primary focus:ring-primary border-border rounded;
+  }
+
+  .form-radio {
+    @apply h-4 w-4 text-primary focus:ring-primary border-border rounded-full;
+  }
+
+  .form-label {
+    @apply block text-sm font-medium text-text mb-1.5;
+  }
+
+  .form-helper {
+    @apply mt-1.5 text-sm text-text-secondary;
+  }
+
+  /* Navigation */
+  .nav-link {
+    @apply flex items-center space-x-3 px-4 py-2.5 text-sm font-medium rounded-md transition-all duration-200;
+  }
+
+  .nav-link:not(.active) {
+    @apply text-text-secondary hover:text-primary hover:bg-background-alt;
+  }
+
+  .nav-link.active {
+    @apply bg-primary bg-opacity-10 text-primary font-semibold;
+  }
+
+  /* Tabs */
+  .tabs {
+    @apply flex space-x-1 border-b border-border;
+  }
+
+  .tab {
+    @apply py-3 px-4 text-sm font-medium focus:outline-none transition-all duration-200 border-b-2 border-transparent;
+  }
+
+  .tab:not(.active) {
+    @apply text-text-secondary hover:text-primary hover:border-primary;
+  }
+
+  .tab.active {
+    @apply text-primary border-b-2 border-primary font-semibold;
+  }
+
+  /* Alerts */
+  .alert {
+    @apply p-4 rounded-md border border-transparent;
+  }
+
+  .alert-info {
+    @apply bg-primary bg-opacity-5 text-primary border-primary border-opacity-20;
+  }
+
+  .alert-success {
+    @apply bg-success bg-opacity-5 text-success border-success border-opacity-20;
+  }
+
+  .alert-warning {
+    @apply bg-warning bg-opacity-5 text-warning border-warning border-opacity-20;
+  }
+
+  .alert-error {
+    @apply bg-error bg-opacity-5 text-error border-error border-opacity-20;
+  }
+
+  /* Progress */
+  .progress-bar {
+    @apply w-full bg-progress-bg rounded-full h-2.5 overflow-hidden;
+  }
+
+  .progress-bar-fill {
+    @apply h-full bg-progress-tip transition-all duration-300;
+  }
+
+  .progress-bar-fill-alt {
+    @apply h-full bg-progress-tip transition-all duration-300;
+  }
+  
+  /* Data Display */
+  .data-label {
+    @apply text-sm text-text-secondary font-medium mb-1;
+  }
+  
+  .data-value {
+    @apply text-base text-text font-medium;
+  }
+  
+  .section-heading {
+    @apply text-lg font-semibold text-primary mb-4 pb-2 border-b border-border;
+  }
+} 
